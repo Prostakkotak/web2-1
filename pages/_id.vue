@@ -17,11 +17,8 @@ export default {
     return { id };
   },
   mounted() {
-    this.$store.state.news.newsList.find((e) => {
-      if (e.id == this.id) {
-        this.newsData = e
-      }
-    });
+    console.log(this.$store.state.news.newsList)
+    this.newsData = this.$store.state.news.newsList.find(e => e.id == this.id)
   },
 }
 </script>
