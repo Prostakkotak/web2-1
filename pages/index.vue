@@ -11,9 +11,13 @@
       <v-btn to="newspage/" class="blue" color="white--text"
         >Перейти к новостям</v-btn
       >
+      <IndexSlider />
     </v-row>
 </template>
 
 <script>
-export default {};
+import IndexSlider from '../components/IndexSlider.vue'
+export default {
+  components: ["IndexSlider"]
+};
 </script>

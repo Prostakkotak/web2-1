@@ -5,7 +5,7 @@
     <NuxtLink :to="`/${newsData.id}`" class="link">
       <v-card
         :elevation="hover ? 12 : 2"
-        :class="{ 'on-hover': hover, 'pa-4 ma-2 col': true }"
+        :class="{ 'on-hover': hover, 'pa-4 my-2 col': true }"
       >
         <h2>{{ newsData.name }}</h2>
         <p style="max-width: 70ch; overflow: hidden; white-space: nowrap">
